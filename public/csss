@@ -1,0 +1,319 @@
+/* 
+.fl-lt {float:left;}
+.fl-rt {float:right;}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+ul{ list-style:none;}
+
+.figure{ margin:0px;}
+
+img{ max-width:100%;}
+
+a, a:hover, a:active{ outline:0px !important}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('../fonts/lato-regular.eot');
+    src: url('../fonts/lato-regular.eot') format('embedded-opentype'),
+         url('../fonts/lato-regular.woff2') format('woff2'),
+         url('../fonts/lato-regular.woff') format('woff'),
+         url('../fonts/lato-regular.ttf') format('truetype'),
+         url('../fonts/lato-regular.svg#LatoRegular') format('svg');
+}
+@font-face {
+    font-family: 'LatoBoldBold';
+    src: url('../fonts/lato-bold.eot');
+    src: url('../fonts/lato-bold.eot') format('embedded-opentype'),
+         url('../fonts/lato-bold.woff2') format('woff2'),
+         url('../fonts/lato-bold.woff') format('woff'),
+         url('../fonts/lato-bold.ttf') format('truetype'),
+         url('../fonts/lato-bold.svg#LatoBoldBold') format('svg');
+}
+@font-face {
+    font-family: 'DosisBold';
+    src: url('../fonts/dosis-bold.eot');
+    src: url('../fonts/dosis-bold.eot') format('embedded-opentype'),
+         url('../fonts/dosis-bold.woff2') format('woff2'),
+         url('../fonts/dosis-bold.woff') format('woff'),
+         url('../fonts/dosis-bold.ttf') format('truetype'),
+         url('../fonts/dosis-bold.svg#DosisBold') format('svg');
+}
+
+#root{
+	background-color: #f9f9f9;
+}
+body {
+	background:#f9f9f9;;
+	font-family: 'Lato', sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	color:#888888;
+	margin:0;
+}
+h2{
+	font-size:38px;
+	color:#222222;
+	
+	font-weight:700;
+	margin:35px 0 25px 0;
+	text-align:center;
+	
+}
+h3{
+	font-family: 'Dosis', sans-serif;
+	font-weight: 600;
+	color:#222222;
+	font-size:16px;
+	margin:0 0 5px 0;
+	text-transform:uppercase;
+}
+h6{
+	font-size:16px;
+	color:#888888;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	text-align:center;
+	margin:0 0 60px 0;
+}
+p{
+	line-height:24px;
+	margin:0;
+}
+
+
+#header_outer{
+	background:#f9f9f9;
+	padding:30px 0px;
+	}
+
+.header_section{
+	position:relative;
+	}
+	
+.logo{
+	float:left;
+	}
+	
+.res-nav_click{ display:none;}
+	
+
+	
+.nav{
+	float:right;
+	}
+	
+.nav ul{
+	list-style:none;
+	padding:0px;
+	}
+.nav ul.toggle{
+	display:none;
+	visibility:hidden;
+	height:0px;
+	overflow:hidden;
+	margin-bottom: 0;
+	}
+	
+.nav ul li{
+	display:inline-block;
+	margin:0 23px;
+	}
+	
+#header {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 48px;
+  z-index: 3;
+  transition: all 0.5s ease;
+}
+.pattren{
+	background-image:url(../img/Group6.png) no-repeat;
+}
+#header #logo {
+  padding: 6px 0 0 0;
+}
+
+#header #logo h1 {
+  color: #505050;
+  font-family: "Philosopher", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+#header #logo h1 a {
+  color: #555;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#header #logo h1 a span {
+  color: #71c55d;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+}
+
+.scroll-header {
+  background: #fff;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+/* .nav ul li:first-child{
+	/*margin:0px;*/
+	 
+	
+.nav ul li:last-child{
+	margin:0 0 0 23px;
+	}
+	
+.nav ul li a{
+	display:block;
+	font-size:14px;
+	color:#222222;
+	font-family:'Dosis';
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight: 600;
+	transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;	
+	}
+.nav ul li a:hover{
+	color:#49b5e7;
+	}
+	
+
+	
+
+/* first page with image
+---------------------------------*/
+
+.top_cont_outer{
+	background:#f9f9f9;
+	position:relative;
+	}
+	
+.top_cont_inner{
+	background:url(../img/Group.png) no-repeat right bottom;
+	}
+	.is1{
+		background:url(../img/Bitmap.png) no-repeat center center;
+		}
+.top_content{
+	position:relative;
+	padding-top: 50px;
+	}
+	
+.white_pad{
+	position:relative;
+	right:0px;
+	bottom:0px;
+	}
+	
+.white_pad img{
+	position: absolute;
+	right:0px;
+	bottom:0px;
+	}
+	
+.top_left_cont{
+	padding:110px 0;
+	
+	}
+	
+.top_left_cont h3{
+	font-size:16px;
+	color:#080205d7;
+	margin:0 0 20px 0;
+	text-align:left;
+	font-family:'Lato';
+	font-weight: 700;
+	}
+	
+.top_left_cont h2{
+	font-size:40px;
+	color:#111111;
+	line-height: 52px;
+	margin:0 0 26px 0;
+	font-family:'Dosis';
+	text-align:left;
+	font-weight:700;
+	}
+	
+.top_left_cont p{
+	font-size:16px;
+	color:#888888;
+	margin:0 0 30px 0;
+	line-height: 26px;
+	font-family:'Lato';
+	}
+
+a.learn_more2{
+	font-family: 'Dosis';
+	display:block;
+	font-size:16px;
+	color:#ffffff;
+	background:blue;
+	width:178px;
+	height:46px;
+	line-height:46px;
+	border-radius:3px;
+	text-align:center;
+	font-family:''Dosis'';
+	text-transform:uppercase;
+	font-weight: 600;
+	transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+	}
+a.learn_more2:hover{
+	background:#222222;
+	}
+
+	
+
+
+
+
+
+
+
+/* Services
+---------------------------------*/ */
